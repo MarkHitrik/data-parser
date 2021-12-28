@@ -1,27 +1,59 @@
-*target*
+#
+# Project specific excludes
+#
+
+tomcat
+
+#
+# Default excludes
+#
+
+*.html
+*.log
+
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
 *.jar
+*.rar
+*.tar
+*.zip
 *.war
 *.ear
+*.sar
 *.class
 
-# eclipse specific git ignore
-*.pydevproject
-.project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
+# Maven
+target/
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# eclipse project file
 .settings/
-.loadpath
+.classpath
+.project
 
-# External tool builders
-.externalToolBuilders/
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
 
-# Locally stored "Eclipse launch configurations"
-*.launch
+
+# OS
+.DS_Store
+
+# Misc
+*.swp
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
